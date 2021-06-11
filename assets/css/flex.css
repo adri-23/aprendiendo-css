@@ -1,0 +1,38 @@
+.cajas { /*en el padre siempre se pondra el display para ordenar a sus hijos */
+    max-width: 900px;
+    background-color: lightgrey;
+    border: 3px solid black;
+    height: 600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center; /*para centrar el contenedor*/
+    align-items: center; /*para centrar el contenido*/
+    /*si yo quiero que esten en columna pondre
+    flex-direction: column;
+    flex-direction: column-reverse; pone el contenido de abajo hacia arriba
+    */
+    /*para bajar elementos usamos
+    flex-wrap: wrap;*/
+}
+
+.caja {
+    width: 200px;
+    height: 200px;
+    border: 3px solid black;
+    margin: 10px;
+}
+
+.roja {
+    background-color: red;
+    align-self: baseline; /*para q se valla hacia arriba solo este elemnto*/
+    justify-self: baseline;
+}
+
+.verde {
+    background-color: greenyellow;
+}
+
+.azul {
+    background-color: lightskyblue;
+    align-self: flex-end; /*para que se valla hacia abajo el contenido*/
+}

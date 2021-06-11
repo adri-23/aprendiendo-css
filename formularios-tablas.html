@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Formulario y tablas</title>
+    </head>
+    <body>
+        <h1>Formularios y tablas</h1>
+        <table border = "1"> <!--borde, podemos cambiar el numero-->
+            <tr> <!--fila-->
+                <th>lunes</th>> <!--encabezado de la tablas-->
+                <th>martes</th>
+                <th>miercoles</th>
+                <th>jueves</th>
+                <th>viernes</th>
+                <th>sabado</th>
+                <th>domingo</th>
+            </tr>
+            <tr> <!--fila-->
+                <td>curso de js</td> <!--columnas-->
+                <td>curso bootstrap</td>
+                <td>curso de java</td>
+                <td>curso de springboot</td>
+                <td>curso de html</td>
+                <td colspan="2">descanso</td> <!--sirve para que se esspanda en toda las filas -->
+                <td rowspan="4">descanso</td> <!--rowspan sirve para que se espanda en las columna siguientes-->
+            </tr>
+            <tr>
+                <td>dormir</td>
+                <td>comer</td>
+                <td>bañar</td>
+                <td>correr</td>
+                <td>saltar</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+            
+        </table>
+        <hr/>
+        <form method="POST"> <!--method= metodo. POST para hacer registros y que los oculte-->
+            <h3>Registrate</h3>
+            <p>
+                <label for="nombre">Nombre:</label> <!--hace referncia a lo que va ir dentro de lascajitas <input>-->
+                <input type="text" name="nombre" placeholder="anai..." required/> <!--creamos la cajita-->
+            </p>
+            <p>
+                <label for="email">correo electronico</label>
+                <input type="email" name="email" placeholder="ejemplo@ejempli.com" required/>
+            </p>
+            <p>
+                <label for="password">contraseña</label>
+                <input type="password" name="password" required />
+            </p>
+            <p>
+                <label for="cumpleanio">cumpleanio</label>
+                <input type="date" name="cumpleanio" />
+            </p>
+            <p>
+                <select name="meses" id="">
+                    <option value="enero">enero</option>
+                    <option value="febrero">febrero</option>
+                    <option value="marzo">marzo</option>
+                    <option value="abril">abril</option>
+                </select>
+            </p>
+            <p>
+                <input type="checkbox" />
+                <label for="">opcion 1</label>
+            </p>
+            <p>
+                <input type="radio" name="color" value="rojo">
+                <label for="color">rojo</label>
+                <input type="radio" name="color" value="verde">
+                <label for="color">verde</label>
+                <input type="radio" name="color" value="azul">
+                <label for="color">azul</label>
+                <input type="radio" name="color" value="amarillo">
+                <label for="color">amarillo</label>
+                <input type="radio" name="color" value="naranja">
+                <label for="color">naranja</label>
+            </p>
+            <p>
+                <textarea name="muchotexto" id="" cols="150" rows="20"></textarea>
+            </p>
+            <!-- <input type="submit" value="registrar"> -->
+            <button type="submit">Registrar</button>
+
+        </form>
+
+    </body>
+</html>
+
+
+<!--
+<h1>TABLA EJERCICIO</h1>
+        <table border="1">
+            <tr>
+                <th></th>
+                <th>Nombre</th>
+                <th>Masa(10kg</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+
+            </tr>
+            
+        </table>
+    -->

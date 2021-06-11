@@ -1,0 +1,38 @@
+/*para comprobar que cerro correctamente podemos poner un color fuerte al body por ejemplo::after
+body {
+    background-color: azul
+    {*/
+h1 {
+    color: purple; /*agregar color al texto*/
+    text-align: center;
+}
+p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /*para cambiar el estilo de letra ejem.arial,colibri u otro*/
+    font-size: 24px;
+    font-weight: 700; /*no se pone en pixeles.para adelgazar o enfruesar el text*/
+    font-style: italic; /*poner estilo*/
+    text-decoration: underline cornflowerblue; /*para subrayar y q el subrayado sea a color*/
+    text-transform: uppercase; /*transforma todas las letras en mayusculas*/
+}
+
+div {   /*hacemps cambios de estilo de nuestra etiqueta div*/
+    height: 500px; /*propiedad para poner altura*/
+    width: 400px; /*limites el ancho*/
+    /*
+    background-color: azul; permite poner un color al fondo
+    background-image: url("../img/colibri.jpg") nos permite agregar una imagen
+    margin: 20px; Se refiere al margen, se aplicaa los cuatro lados*/
+    margin-top: 20px; /*margen fuera del elemento*/
+    margin-left: 50px;
+    padding: 20px; /*margen interno del elemento.Marigin es un margen para toda la seccion*/
+}
+/*el div tendra las propieades, pero para que uno tenga otras caracteristics diferentes le ponemos.uno,.dos(hace referencia de los div)
+ahora los modificaremos por clases que sera .uno, como le aigamos puesto en el html las clases nos referimos aqui*/
+.uno{
+    background-image: url("../img/colibri.jpg");
+    background-position: center; /*para centrar la imagen*/
+    background-size: cover;
+}
+.dos {
+    background-color: blue;
+}

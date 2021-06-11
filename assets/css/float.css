@@ -1,0 +1,21 @@
+.cajas {
+    max-width: 800px; /*"ponemos limite y usamos pixeles y no porcentajes"tamaño maximo que va tener mi contenedor */
+    background-color: cornflowerblue;
+    margin: 0 auto;
+    border: 2px solid black;
+}
+
+.caja  {
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    margin: 10px;
+    border: 5px solid red;
+    float: left; /*float: right es para posicionarse a lado*/
+}
+/*en el html agrgamos otro div con clase clearfix para poder lo siguiente:*/
+/*para romper el flujo usamos lo sig:*/
+.clearfix {
+    float: none;
+    clear: both; /*para limpiar el float*/
+}
